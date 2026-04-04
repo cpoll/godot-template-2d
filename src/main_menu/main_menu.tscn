@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr06pyddi7135"]
+
+[ext_resource type="Theme" uid="uid://ba3bt54qojkmk" path="res://themes/main_menu.tres" id="1_tlnm8"]
+[ext_resource type="FontFile" uid="uid://cwwmku3ja5x5x" path="res://assets/fonts/Spicy Sale.ttf" id="2_e0prm"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.356863, 1, 1, 1)
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="P1P2" type="HBoxContainer" parent="Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="P1" type="ColorRect" parent="Layout/P1P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364706, 0.156863, 1, 1)
+
+[node name="P2" type="ColorRect" parent="Layout/P1P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 0.431373, 1, 1)
+
+[node name="PressAnyKeyLabel" type="Label" parent="Layout"]
+layout_mode = 2
+theme = ExtResource("1_tlnm8")
+theme_override_fonts/font = ExtResource("2_e0prm")
+text = "Press Any Key to Join"
+horizontal_alignment = 1
+
+[node name="P3P4" type="HBoxContainer" parent="Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="P3" type="ColorRect" parent="Layout/P3P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0.466594, 0.522047, 1)
+
+[node name="P4" type="ColorRect" parent="Layout/P3P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.914692, 0.634513, 0.292572, 1)

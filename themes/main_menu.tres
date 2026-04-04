@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://ba3bt54qojkmk"]
+
+[ext_resource type="FontFile" uid="uid://cwj0wc2jashiy" path="res://assets/fonts/Spicy Sale.otf" id="1_djdlk"]
+
+[sub_resource type="FontVariation" id="FontVariation_djdlk"]
+base_font = ExtResource("1_djdlk")
+
+[resource]
+default_font = SubResource("FontVariation_djdlk")
+default_font_size = 50
+Label/colors/font_color = Color(1, 1, 0, 1)
+Label/colors/font_outline_color = Color(0, 0, 0.403922, 1)
+Label/constants/outline_size = 10
