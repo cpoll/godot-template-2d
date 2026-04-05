@@ -1,0 +1,131 @@
+[gd_scene load_steps=4 format=3 uid="uid://cr06pyddi7135"]
+
+[ext_resource type="Theme" uid="uid://ba3bt54qojkmk" path="res://themes/main_menu.tres" id="1_4v1mi"]
+[ext_resource type="Script" uid="uid://cq6ldx71h1sj0" path="res://src/main_menu/join_game_menu.gd" id="1_rdba0"]
+[ext_resource type="FontFile" uid="uid://cwwmku3ja5x5x" path="res://assets/fonts/Spicy Sale.ttf" id="2_rdba0"]
+
+[node name="JoinGameMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rdba0")
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.356863, 1, 1, 1)
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="P1P2" type="HBoxContainer" parent="Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="P1" type="ColorRect" parent="Layout/P1P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.364706, 0.156863, 1, 1)
+
+[node name="PData" type="Label" parent="Layout/P1P2/P1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4v1mi")
+text = "P1 Data"
+
+[node name="P2" type="ColorRect" parent="Layout/P1P2"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 0.431373, 1, 1)
+
+[node name="PData" type="Label" parent="Layout/P1P2/P2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4v1mi")
+text = "P2 Data"
+
+[node name="CenterLabel" type="Label" parent="Layout"]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("1_4v1mi")
+theme_override_fonts/font = ExtResource("2_rdba0")
+text = "Press Any Key to Join"
+horizontal_alignment = 1
+
+[node name="P3P4" type="HBoxContainer" parent="Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="P3" type="ColorRect" parent="Layout/P3P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0, 0.466594, 0.522047, 1)
+
+[node name="PData" type="Label" parent="Layout/P3P4/P3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4v1mi")
+text = "P3 Data"
+
+[node name="P4" type="ColorRect" parent="Layout/P3P4"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.914692, 0.634513, 0.292572, 1)
+
+[node name="PData" type="Label" parent="Layout/P3P4/P4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4v1mi")
+text = "P4 Data"
