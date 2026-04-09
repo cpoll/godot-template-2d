@@ -3,8 +3,7 @@ extends Node
 var players = []
 
 class Player extends RefCounted:
-    var device_number = 10
-    var player_number = 10
+    var device_number
     
     func _init(device_number: int) -> void:
         self.device_number = device_number

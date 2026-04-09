@@ -66,7 +66,7 @@ func handle_input():
             start_countdown()
 
 func start_countdown():
-    countdown = 5
+    countdown = 3
     
 func stop_countdown():
     countdown = null

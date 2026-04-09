@@ -1,9 +1,6 @@
-[gd_scene format=3 uid="uid://cgdsynqey6r21"]
+[gd_scene load_steps=2 format=3 uid="uid://c33c8lx7my6u4"]
 
-[node name="Game" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[ext_resource type="Script" uid="uid://cqjeewpm2d4p5" path="res://src/game/game.gd" id="1_qnjlk"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_qnjlk")
