@@ -1,5 +1,7 @@
 extends Node
 
+var players = []
+
 class Player extends RefCounted:
     var device_number = 10
     var player_number = 10
@@ -20,8 +22,8 @@ func _process(delta: float) -> void:
 # game loop loops through players and gets each player's device?
 # Alternatively, use this class to get the device and pass it to the player we instantiate
 
-func add_player(device_number: int) -> Player:
-    return Player.new(device_number)
+func add_player(device_number: int) -> void:
+    players.append(Player.new(device_number))
     
 func remove_player(player_number: int) -> void:
     pass

@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 MultiplayerInput="*res://src/vendor/multiplayer_input/multiplayer_input.gd"
+Players="*res://src/globals/players.gd"
 
 [display]
 

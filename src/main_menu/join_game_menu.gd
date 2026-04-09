@@ -72,9 +72,11 @@ func stop_countdown():
     countdown = null
     
 func start_game():
-    # TODO: Add players/devices to Players
     print("start game")
-    pass
+    for d in joined_devices:
+        if d.device_id != null:
+            Players.add_player(d.device_id)
+    get_tree().change_scene_to_file("res://src/game/game.tscn") # TODO: Pack the scene at game start?
     
 func update_ui():
     for i in joined_devices.size():
