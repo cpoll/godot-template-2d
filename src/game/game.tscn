@@ -1,14 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://c33c8lx7my6u4"]
+[gd_scene load_steps=7 format=3 uid="uid://c33c8lx7my6u4"]
 
 [ext_resource type="Script" uid="uid://cqjeewpm2d4p5" path="res://src/game/game.gd" id="1_qnjlk"]
 [ext_resource type="Shader" uid="uid://c8lbagi3bjbpl" path="res://src/game/background.gdshader" id="2_s6lek"]
 [ext_resource type="Texture2D" uid="uid://4o5auyngcvd" path="res://icon.svg" id="3_kgj8g"]
+[ext_resource type="Shader" uid="uid://cghw64hvwxxn6" path="res://src/game/ripple.gdshader" id="4_l80un"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kgj8g"]
 shader = ExtResource("2_s6lek")
 shader_parameter/zoom = 7.0
 shader_parameter/speed = 0.8
 shader_parameter/bright = 3.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xptat"]
+shader = ExtResource("4_l80un")
+shader_parameter/wave_count = 20.0
+shader_parameter/speed = 5.0
+shader_parameter/height = 0.005
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_qnjlk")
@@ -18,3 +25,11 @@ material = SubResource("ShaderMaterial_kgj8g")
 scale = Vector2(15.0391, 8.40625)
 texture = ExtResource("3_kgj8g")
 centered = false
+
+[node name="PlayersContainer" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_xptat")
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(48.04, 26.92)

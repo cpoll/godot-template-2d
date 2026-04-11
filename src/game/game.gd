@@ -1,6 +1,7 @@
 extends Node2D
 
 var character_scene = preload("res://src/game/character.tscn")
+@onready var players_container = $PlayersContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -10,7 +11,7 @@ func _ready() -> void:
     for player in Players.players:
         var c = character_scene.instantiate()
         c.init(DeviceInput.new(player.device_number))
-        add_child(c)
+        players_container.add_child(c)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
