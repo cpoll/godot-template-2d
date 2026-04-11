@@ -3,13 +3,15 @@ shader_type canvas_item;
 
 uniform float zoom = 10.0;
 uniform float speed = 0.3;
-uniform float bright = 5.0;
+uniform float bright = 8.0;
 
 void fragment()
 {
 	// uncoment when using real texture
 	//vec4 texture_color = texture(TEXTURE, UV);
-	vec4 texture_color = vec4(0.192156862745098, 0.6627450980392157, 0.9333333333333333, 1.0);
+    vec4 texture_color = vec4(0.3515, 0.7695, 0.7968, 1.0); // SOBEACHY8 Blue 90, 197, 204
+
+    // vec4 texture_color = vec4(0.192156862745098, 0.6627450980392157, 0.9333333333333333, 1.0);
 
 	vec4 k = vec4(TIME)*speed;
 	k.xy = UV * zoom;
