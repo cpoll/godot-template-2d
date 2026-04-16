@@ -1,6 +1,6 @@
 extends Node2D
 
-var character_scene = preload("res://src/game/character.tscn")
+var character_scene = preload("res://src/scenes/game/character.tscn")
 @onready var players_container = $PlayersContainer
 
 # Called when the node enters the scene tree for the first time.

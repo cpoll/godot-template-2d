@@ -89,6 +89,8 @@ func update_ui():
         center_label.text = str(int(ceil(countdown)))
     else:
         # TODO: Change the label depending on whether 2+ players have joined
-        center_label.text = "Press any key to join"
+        # Changing the label resets the text effect, so only do it if the text changes
+        var new_text = "[wave amp=50.0 freq=5.0]Press any key to join[/wave]"
+        if new_text != center_label.text: center_label.text = new_text
         
         

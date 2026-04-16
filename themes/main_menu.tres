@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://ba3bt54qojkmk"]
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://ba3bt54qojkmk"]
 
 [ext_resource type="FontFile" uid="uid://cwj0wc2jashiy" path="res://assets/fonts/Spicy Sale.otf" id="1_djdlk"]
+[ext_resource type="FontFile" uid="uid://cwwmku3ja5x5x" path="res://assets/fonts/Spicy Sale.ttf" id="1_va2tg"]
 
 [sub_resource type="FontVariation" id="FontVariation_djdlk"]
 base_font = ExtResource("1_djdlk")
@@ -11,3 +12,10 @@ default_font_size = 50
 Label/colors/font_color = Color(1, 1, 0, 1)
 Label/colors/font_outline_color = Color(0, 0, 0.403922, 1)
 Label/constants/outline_size = 10
+Label/font_sizes/font_size = 50
+RichTextLabel/colors/default_color = Color(1, 1, 0, 1)
+RichTextLabel/colors/font_color = Color(1, 1, 0, 1)
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0.403922, 1)
+RichTextLabel/constants/outline_size = 10
+RichTextLabel/font_sizes/normal_font_size = 50
+RichTextLabel/fonts/normal_font = ExtResource("1_va2tg")
